@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Walone_thin";
+    src: url("../fonts/Z06-Walone/Z06-Walone Thin.ttf");
+    font-weight: auto;
+}
+@font-face {
+    font-family: "Walone_bold";
+    src: url("../fonts/Z06-Walone/Z06-Walone Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Walone_regular";
+    src: url("../fonts/Z06-Walone/Z06-Walone Regular.ttf");
+    font-weight: normal;
+}
+
+/* * {
+    font-family: Walone_regular;
+} */
+
+.Walone-Bold {
+    font-family: Walone_bold;
+}
+
+.menu-icon {
+    width: 50px;
+    height: 10px;
+    /*background: pink;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu-icon span {
+    width: 20px;
+    height: 2px;
+    background: #282c34;
+    position: absolute;
+    transition: 0.2s;
+}
+
+.menu-icon span:nth-child(1) {
+    transform: translateY(0);
+}
+
+.menu-icon span:nth-child(2) {
+    transform: translateY(10px);
+}
+
+.menu-icon.show span:nth-child(1) {
+    transform: rotate(33deg);
+}
+
+.menu-icon.show span:nth-child(2) {
+    transform: rotate(-33deg);
+}
+
+.z-1000 {
+    z-index: 2000;
+}
+
+/* Story */
+
+.fs-60 {
+    font-size: 60px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
